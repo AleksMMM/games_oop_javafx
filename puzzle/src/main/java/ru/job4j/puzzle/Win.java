@@ -31,15 +31,4 @@ public class Win {
         return true;
     }
 
-    //for socoban
-    public static boolean isWin(int[][] board) {
-        int indexElement = 0;
-        for (int index = 0; index < board.length; index++) {
-            if (board[index][index] == 1) {
-                indexElement = index;
-                break;
-            }
-        }
-        return ((monoHorizontal(board, indexElement)) || (monoVertical(board, indexElement)));
-    }
 }
